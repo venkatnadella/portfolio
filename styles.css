@@ -1,0 +1,14 @@
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.jersey {
+    border-radius: 50%;
+    /*margin: 10px;*/
+    
+    margin-right: 10%;
+    float: left;
+    display: block;
+}
