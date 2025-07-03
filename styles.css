@@ -83,3 +83,41 @@
     color: black;
     list-style-type: none;
 }
+
+
+
+div p {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.7;
+  width: 80%;
+  text-align: center;
+    margin: 0 auto;
+}
+
+.glow {
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; 
+  }
+  
+  to {
+    text-shadow: 0 0 20px #ffffff;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; 
+  }
+  
+  to {
+    text-shadow: 0 0 20px #ffffff;
+  }
+}
