@@ -1,7 +1,46 @@
 .header {
-    background-color: #f8f9fa;
-    padding: 20px;
+    background-color: #96bfd7;
+    padding: 10px;
     text-align: center;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    background-color: #fdfbfb;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f0b81b;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li a {
+    background-color: #96bfd7;
+    color: black;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f0b81b;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.navbar li a.active {
+    background-color: #ddbe8a;
 }
 
 .jersey {
@@ -11,4 +50,36 @@
     margin-right: 10%;
     float: left;
     display: block;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 90%;
+    background-color: #96bfd7;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+.footer div {
+    display: flex;
+    padding: 10px;
+}
+.footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    color: black;
+    list-style-type: none;
 }
