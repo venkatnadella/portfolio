@@ -102,6 +102,25 @@ div p {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 100%;
+    margin-top: 20px;
+}
+
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background-color: #96bfd7;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; 
@@ -120,4 +139,33 @@ div p {
   to {
     text-shadow: 0 0 20px #ffffff;
   }
+}
+
+.gallery-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
