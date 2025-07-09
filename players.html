@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dynamos Club</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/players.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -30,21 +31,63 @@
       </ul>
     </nav>
 
-    <div >
-      <center><h1>Pocket Dynamos</h1></center>
-      
+    <center><h1>Pocket Dynamos</h1></center>
+
+    <div class="players">
+      <aside class="players-filter">
+        <h3>Filter Players</h3>
+        <label>
+          <input type="checkbox" value="Batsman" class="role-filter" checked />
+          Batsman </label
+        ><br />
+        <label>
+          <input type="checkbox" value="Bowler" class="role-filter" checked />
+          Bowler </label
+        ><br />
+        <label>
+          <input
+            type="checkbox"
+            value="Allrounder"
+            class="role-filter"
+            checked
+          />
+          Allrounder </label
+        ><br />
+        <label>
+          <input
+            type="checkbox"
+            value="Wicketkeeper"
+            class="role-filter"
+            checked
+          />
+          Wicketkeeper
+        </label>
+      </aside>
+      <div id="players-list"></div>
     </div>
   </body>
 
   <footer class="footer">
-      <p>&copy; 2025 Dynamos Club. All rights reserved.</p>
-      <div class="rightFoot">
-        <p>Follow us on social media!</p>
-        <ul class="social-media">
-          <li><a rel = "noopener" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-          <li><a rel = "noopener" href="https://www.x.com/" target="_blank"><i>X</i></a></li>
-          <li><a rel = "noopener" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-    </footer>
+    <p>&copy; 2025 Dynamos Club. All rights reserved.</p>
+    <div class="rightFoot">
+      <p>Follow us on social media!</p>
+      <ul class="social-media">
+        <li>
+          <a rel="noopener" href="https://www.facebook.com/" target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a rel="noopener" href="https://www.x.com/" target="_blank"
+            ><i>X</i></a
+          >
+        </li>
+        <li>
+          <a rel="noopener" href="https://www.instagram.com/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+  </footer>
 </html>

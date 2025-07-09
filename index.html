@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dynamos Club</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/quotes.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -30,7 +31,7 @@
       </ul>
     </nav>
 
-    <div>
+    <div class="content">
       <center><h1>Pocket Dynamos</h1></center>
       <p>
         Welcome to Pocket Dynamos Cricket Club, where passion meets performance!
@@ -43,6 +44,65 @@
         on and off the field.
       </p>
     </div>
+    <!-- ...existing code... -->
+    <div class="quotes-carousel">
+      <div class="quotes-track" id="quotes-track">
+        <div class="quote-tab">
+          <p>
+            "You don't play for the crowd, you play for the country."
+            <br /><span>- Mahendra Singh Dhoni</span>
+          </p>
+        </div>
+        <div class="quote-tab">
+          <p>
+            "People throw stones at you and you convert them into milestones."
+            <br /><span>- Sachin Tendulkar</span>
+          </p>
+        </div>
+        <div class="quote-tab">
+          <p>
+            "First of all, convince yourself that you are the best because the
+            rest of the world is going to go proving this to others."
+            <br /><span>- Wasim Akram</span>
+          </p>
+        </div>
+        <div class="quote-tab">
+          <p>
+            "Every morning I woke up, I believed that I could score runs for
+            India." <br /><span>- Sourav Ganguly</span>
+          </p>
+        </div>
+        <div class="quote-tab">
+          <p>
+            "Enjoy the game and chase your dreams. Dreams do come true."
+            <br /><span>- Virat Kohli</span>
+          </p>
+        </div>
+        <div class="quote-tab">
+          <p>
+            "Cricket is a team game, and you have to play as a team."
+            <br /><span>- Rahul Dravid</span>
+          </p>
+        </div>
+        <div class="quote-tab">
+          <p>
+            "No matter how talented you are or naturally gifted you are, there’s
+            no substitute to hard work if you have to maintain standards."
+            <br /><span>- Rohit Sharma</span>
+          </p>
+        </div>
+        <div class="quote-tab">
+          <p>
+            "Take risks, if you win you will be happy; if you lose, you will be
+            wise." <br /><span>- Hardik Pandya</span>
+          </p>
+        </div>
+      </div>
+      <button class="quotes-nav quotes-nav-left" id="quotes-prev" aria-label="Previous Quote">&#8592;</button>
+<button class="quotes-nav quotes-nav-right" id="quotes-next" aria-label="Next Quote">&#8594;</button>
+      <div class="quotes-dots" id="quotes-dots"></div>
+    </div>
+    <!-- ...existing code... -->
   </body>
 
   <footer class="footer">

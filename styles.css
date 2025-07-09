@@ -1,3 +1,10 @@
+body {
+    font-family: cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .header {
     background-color: #96bfd7;
     padding: 10px;
@@ -25,6 +32,7 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .navbar li a {
@@ -100,6 +108,7 @@ div p {
   color: #ffffff;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
+  margin: 0;
 }
 
 .contact-container {
@@ -168,4 +177,172 @@ div p {
 
 .gallery img:hover {
   transform: scale(1.05);
+}
+
+#players-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+  justify-content: space-between;
+  gap: 18px;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.players {
+  display: flex;
+  flex-basis: 80%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.players-filter {
+  min-width: 180px;
+  background: #96bfd7;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 18px 12px;
+  margin-left: 24px;
+}
+
+.player-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 16px;
+  gap: 18px;
+}
+
+.player-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.player-age {
+  font-size: 1rem;
+  color: #555;
+}
+
+.player-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.quotes-carousel {
+  max-width: 600px;
+  margin: 32px auto 0 auto;
+  position: relative;
+  background: #e5e5e5; /* Slightly darker */
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  padding: 32px 24px 56px 24px;
+}
+
+.quotes-track {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(.77,0,.18,1);
+  will-change: transform;
+  /* Remove width: 100%; */
+}
+
+.quote-tab {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 12px;
+  opacity: 0.95;
+  transition: opacity 0.5s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.quote-tab p {
+  font-size: 1.25rem;
+  color: #1a237e;
+  margin: 0;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.quote-tab span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fbc02d;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.quotes-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quotes-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.quotes-dot.active {
+  background: #1a237e;
+}
+
+.quotes-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1a237e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 2;
+  transition: background 0.2s, opacity 0.2s;
+}
+.quotes-nav:hover {
+  background: #fbc02d;
+  color: #1a237e;
+  opacity: 1;
+}
+.quotes-nav-left {
+  left: 16px;
+}
+.quotes-nav-right {
+  right: 16px;
 }
