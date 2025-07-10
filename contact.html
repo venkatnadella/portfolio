@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dynamos Club</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/pop-up.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -31,7 +32,7 @@
     </nav>
 
     <center><h1>Pocket Dynamos</h1></center>
-
+    <div class="contact-section">
     <div class="contact-container">
       <div id="contact-info">
         <h2><a href="contact.html">Contact Us:</a></h2>
@@ -53,7 +54,17 @@
         <br />
       </div>
 
-      <iframe
+      <div id="contact-info">
+        <h2><a href="contact.html">Leave us a Message:</a></h2>
+        <form action="/contact.html">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px; width: 400px; margin: 20px;"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+      <br/>
+      </div>
+    </div>
+
+    <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1418.821992718857!2d-79.46182229016796!3d43.77820973116035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2dd84598fbd3%3A0x396eff1e1b859a60!2sRoss%20Lord%20Cricket%20Grounds!5e1!3m2!1sen!2sca!4v1751560456089!5m2!1sen!2sca"
         width="600"
         height="450"
@@ -62,16 +73,9 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-
-      <div id="contact-info">
-        <h2><a href="contact.html">Leave us a Message:</a></h2>
-        <form action="/contact.html">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px; width: 400px;"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-      <br/>
-      </div>
     </div>
+
+    <div id="snackbar">Message received! Thank you for contacting us.</div>
   </body>
 
   <footer class="footer">
