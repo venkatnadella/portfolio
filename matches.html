@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dynamos Club</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/matches.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -30,21 +31,45 @@
       </ul>
     </nav>
 
-    <div >
+    <div>
       <center><h1>Pocket Dynamos</h1></center>
-      
+
+      <div class="matches-section">
+    <div class="matches-tabs">
+      <button class="matches-tab active" data-tab="ongoing">On Going</button>
+      <button class="matches-tab" data-tab="upcoming">Upcoming</button>
+      <button class="matches-tab" data-tab="past">Past</button>
+    </div>
+  </div>
+
+  <!-- Matches Cards Section -->
+  <div id="matches-cards-container">
+    <!-- Match cards will be rendered here by JS -->
+  </div>
     </div>
   </body>
 
   <footer class="footer">
-      <p>&copy; 2025 Dynamos Club. All rights reserved.</p>
-      <div class="rightFoot">
-        <p>Follow us on social media!</p>
-        <ul class="social-media">
-          <li><a rel = "noopener" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-          <li><a rel = "noopener" href="https://www.x.com/" target="_blank"><i>X</i></a></li>
-          <li><a rel = "noopener" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-    </footer>
+    <p>&copy; 2025 Dynamos Club. All rights reserved.</p>
+    <div class="rightFoot">
+      <p>Follow us on social media!</p>
+      <ul class="social-media">
+        <li>
+          <a rel="noopener" href="https://www.facebook.com/" target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a rel="noopener" href="https://www.x.com/" target="_blank"
+            ><i>X</i></a
+          >
+        </li>
+        <li>
+          <a rel="noopener" href="https://www.instagram.com/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+  </footer>
 </html>

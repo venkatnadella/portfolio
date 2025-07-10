@@ -346,3 +346,78 @@ div p {
 .quotes-nav-right {
   right: 16px;
 }
+
+.matches-section {
+  max-width: 600px;
+  margin: 32px auto 0 auto;
+  background: #ececec;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 5px;
+}
+
+.matches-tabs {
+  display: flex;
+  background: #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.matches-tab {
+  flex: 1;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+
+.matches-tab.active {
+  background: #fff;
+  color: #1a237e;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.matches-tab:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+#matches-cards-container {
+  max-width: 600px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.match-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.match-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.match-date {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.match-status {
+  font-size: 0.98rem;
+  color: #fbc02d;
+  font-weight: bold;
+}
