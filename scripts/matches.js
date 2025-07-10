@@ -5,7 +5,14 @@ const matchesData = {
       date: "July 9, 2025",
       status: "2nd Innings - Dynamos Batting",
       details: "Dynamos: 120/3 (15.2 ov)"
+    },
+    {
+      title: "Challengers vs Warriors",
+      date: "July 10, 2025",
+      status: "1st Innings - Challengers Batting",
+      details: "Challengers: 180/4 (20 ov)"
     }
+
   ],
   upcoming: [
     {
@@ -13,6 +20,12 @@ const matchesData = {
       date: "July 20, 2025",
       status: "Starts at 10:00 AM",
       details: "Venue: City Stadium"
+    },
+    {
+      title: "Titans vs Warriors",
+      date: "July 22, 2025",
+      status: "Starts at 3:00 PM",
+      details: "Venue: National Arena"
     }
   ],
   past: [
@@ -21,6 +34,12 @@ const matchesData = {
       date: "July 1, 2025",
       status: "Dynamos won by 5 wickets",
       details: "Warriors: 145/8, Dynamos: 146/5"
+    },
+    {
+      title: "Challengers vs Titans",
+      date: "July 5, 2025",
+      status: "Titans won by 3 runs",
+      details: "Challengers: 160/7, Titans: 163/6"
     }
   ]
 };

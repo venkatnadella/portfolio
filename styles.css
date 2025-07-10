@@ -421,3 +421,82 @@ div p {
   color: #fbc02d;
   font-weight: bold;
 }
+
+
+.team-stats {
+  max-width: 700px;
+  margin: 32px auto 24px auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 24px;
+}
+
+.team-stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.team-stat-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 18px 24px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 6px;
+}
+
+.player-stats {
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 24px;
+}
+
+.player-stats h2 {
+  margin-top: 24px;
+  color: #1a237e;
+  font-size: 1.2rem;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 24px 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.stats-table th, .stats-table td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.stats-table th {
+  background: #e5e5e5;
+  color: #1a237e;
+  font-weight: bold;
+}
+
+.stats-table tr:nth-child(even) {
+  background: #f3f3f3;
+}
